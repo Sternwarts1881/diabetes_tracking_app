@@ -28,6 +28,42 @@ This is a Windows Forms application developed in C# for tracking diabetes-relate
 
 ---
 
+## ▶️ Usage
+
+* Doctors are already defined in the database. Using the provided IDs and passwords, you can log in as a doctor.
+* A sample SQL dump is provided so the database can be quickly restored on any system.
+
+### As a doctor, you can:
+
+1. Register a patient into the database. You will have to select their symptoms and add their initial blood sugar level into the system.
+   After registration, patients will receive their login IDs and passwords via e-mail. The system will automatically recommend a dietary and an exercise plan for the patient.
+
+2. Review all of your registered patients' data, such as how well they follow their dietary and exercise plans, the effects of the treatment on their blood sugar levels, the insulin dosages recommended by the system, and more.
+
+3. Filter your patients according to their symptoms and their average blood sugar levels.
+
+4. Send recommendations via text (similar to a standard message).
+
+5. Review alerts which the system automatically sends in case of extreme anomalies or emergency conditions.
+
+And much more...
+
+### As a patient, you can:
+
+1. Enter whether you have followed the dietary and exercise plans into the system.
+
+2. Receive recommended insulin dosages based on the blood sugar levels you register into the system.
+
+3. Review your statistics via simple pie chart graphs.
+
+4. Read any messages your doctor has sent you.
+
+5. Review your previous insulin dosages.
+ 
+And much more...
+
+---
+
 ## Requirements
 
 * **Windows OS**
@@ -63,41 +99,6 @@ This is a Windows Forms application developed in C# for tracking diabetes-relate
 
 6. Run the application.
 
----
-
-## ▶️ Usage
-
-* Doctors are already defined in the database. Using the provided IDs and passwords, you can log in as a doctor.
-* A sample SQL dump is provided so the database can be quickly restored on any system.
-
-### As a doctor, you can:
-
-1. Register a patient into the database. You will have to select their symptoms and add their initial blood sugar level into the system.
-   After registration, patients will receive their login IDs and passwords via e-mail. The system will automatically recommend a dietary and an exercise plan for the patient.
-
-2. Review all of your registered patients' data, such as how well they follow their dietary and exercise plans, the effects of the treatment on their blood sugar levels, the insulin dosages recommended by the system, and more.
-
-3. Filter your patients according to their symptoms and their average blood sugar levels.
-
-4. Send recommendations via text (similar to a standard message).
-
-5. Review alerts which the system automatically sends in case of extreme anomalies or emergency conditions.
-
-And much more...
-
-### As a patient, you can:
-
-1. Enter whether you have followed the dietary and exercise plans into the system.
-
-2. Receive recommended insulin dosages based on the blood sugar levels you register into the system.
-
-3. Review your statistics via simple pie chart graphs.
-
-4. Read any messages your doctor has sent you.
-
-5. Review your previous insulin dosages.
-
-And much more...
 
 ---
 

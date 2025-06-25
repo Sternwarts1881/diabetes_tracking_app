@@ -29,7 +29,7 @@ namespace PROJE3
         private void HastaForm_Load(object sender, EventArgs e)
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {
@@ -90,7 +90,7 @@ namespace PROJE3
         private void EgzersizBilgisiGetir()
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
                 string sql = "SELECT egzersiztipi FROM egzersiz WHERE hastaid = @hid ORDER BY egzersizid DESC LIMIT 1";
@@ -120,7 +120,7 @@ namespace PROJE3
         private void DiyetBilgisiGetir()
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
                 string sql = "SELECT diyettipi FROM diyet WHERE hastaid = @hid ORDER BY diyetid DESC LIMIT 1";
@@ -149,7 +149,7 @@ namespace PROJE3
             string bugun = DateTime.Now.ToString("yyyy-MM-dd");
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
 
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -198,7 +198,7 @@ namespace PROJE3
             seri.XValueType = ChartValueType.DateTime;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
                 string sql = "SELECT TarihSaat, Seviye FROM kansekeri WHERE hastaid = @hid ORDER BY TarihSaat ASC";
@@ -248,7 +248,7 @@ namespace PROJE3
             int yapildi = 0, yapilmadi = 0;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -295,7 +295,7 @@ namespace PROJE3
             int yapildi = 0, yapilmadi = 0;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -369,7 +369,7 @@ namespace PROJE3
             DateTime now = DateTime.Now;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -483,7 +483,7 @@ namespace PROJE3
             string bugun = DateTime.Now.ToString("yyyy-MM-dd");
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
 
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 

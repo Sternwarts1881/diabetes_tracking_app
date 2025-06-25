@@ -27,7 +27,7 @@ namespace PROJE3
         private void UyariOlustur(int hastaid)
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -169,7 +169,7 @@ namespace PROJE3
             }
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
                 try {
                     conn.Open();
                     string query = "INSERT INTO kansekeri (hastaid,TarihSaat,Seviye,OlcumSaati) " +

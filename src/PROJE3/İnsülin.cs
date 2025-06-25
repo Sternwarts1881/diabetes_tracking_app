@@ -24,7 +24,7 @@ namespace PROJE3
         private void InsulinForm_Load(object sender, EventArgs e)
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -92,7 +92,7 @@ namespace PROJE3
             DateTime bitis = dtpBitis.Value.Date;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 

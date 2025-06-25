@@ -114,7 +114,7 @@ namespace PROJE3
             }
             string hashliSifre = Sha256Hash(sifre);
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {

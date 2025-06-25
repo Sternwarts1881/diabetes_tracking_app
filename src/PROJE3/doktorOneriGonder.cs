@@ -41,7 +41,7 @@ namespace PROJE3
                 return;
             }
 
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
                 string query = "INSERT INTO oneri (doktorid, hastaid, OneriMetni,TarihSaat) VALUES (@doktorId, @hastaId, @oneri,@tarih)";
@@ -72,7 +72,7 @@ namespace PROJE3
         private int hastaKontrol(int hastaid)
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn2 = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn2 = new MySqlConnection(connStr))
             {
                 conn2.Open();
                 string query = "SELECT COUNT(*) FROM hastavedoktorlar WHERE hastaid=@hid AND doktorid=@did";
@@ -107,7 +107,7 @@ namespace PROJE3
                 return -1;
             }
 
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             { 
             
                 conn.Open();

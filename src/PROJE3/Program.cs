@@ -17,7 +17,7 @@ namespace PROJE3
             Application.SetCompatibleTextRenderingDefault(false);
 
             string connStr = "server=localhost;user=root;database=diyabet_sistemi;port=3306;password=1e2g3e;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            MySqlConnection conn = new MySqlConnection(connStr);
 
             try
             {

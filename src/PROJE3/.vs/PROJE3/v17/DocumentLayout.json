@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Deniz\\Desktop\\diabetes_tracking_app\\src\\PROJE3\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Deniz\\Desktop\\PROJE3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|c:\\users\\deniz\\desktop\\proje3\\hastaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|solutionrelative:hastaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|c:\\users\\deniz\\desktop\\proje3\\hastaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|solutionrelative:hastaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|c:\\users\\deniz\\desktop\\proje3\\diyetegzersizoneriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|solutionrelative:diyetegzersizoneriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|c:\\users\\deniz\\desktop\\proje3\\diyetegzersizoneriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{488D5119-B263-4197-8A3C-2282CC91E688}|PROJE3.csproj|solutionrelative:diyetegzersizoneriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +37,54 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HastaForm.cs",
+              "DocumentMoniker": "C:\\Users\\Deniz\\Desktop\\PROJE3\\HastaForm.cs",
+              "RelativeDocumentMoniker": "HastaForm.cs",
+              "ToolTip": "C:\\Users\\Deniz\\Desktop\\PROJE3\\HastaForm.cs",
+              "RelativeToolTip": "HastaForm.cs",
+              "ViewState": "AgIAAKsBAAAAAAAAAAAEwG0BAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T19:34:01.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HastaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deniz\\Desktop\\PROJE3\\HastaForm.cs",
+              "RelativeDocumentMoniker": "HastaForm.cs",
+              "ToolTip": "C:\\Users\\Deniz\\Desktop\\PROJE3\\HastaForm.cs [Design]",
+              "RelativeToolTip": "HastaForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T19:34:00.223Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiyetEgzersizOneriForm.cs",
+              "DocumentMoniker": "C:\\Users\\Deniz\\Desktop\\PROJE3\\DiyetEgzersizOneriForm.cs",
+              "RelativeDocumentMoniker": "DiyetEgzersizOneriForm.cs",
+              "ToolTip": "C:\\Users\\Deniz\\Desktop\\PROJE3\\DiyetEgzersizOneriForm.cs",
+              "RelativeToolTip": "DiyetEgzersizOneriForm.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAvwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T19:32:58.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DiyetEgzersizOneriForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deniz\\Desktop\\PROJE3\\DiyetEgzersizOneriForm.cs",
+              "RelativeDocumentMoniker": "DiyetEgzersizOneriForm.cs",
+              "ToolTip": "C:\\Users\\Deniz\\Desktop\\PROJE3\\DiyetEgzersizOneriForm.cs [Design]",
+              "RelativeToolTip": "DiyetEgzersizOneriForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T19:32:57.331Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

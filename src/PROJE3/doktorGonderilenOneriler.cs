@@ -26,7 +26,7 @@ namespace PROJE3
         private void doktorGonderilenOneriler_Load(object sender, EventArgs e)
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {
@@ -67,7 +67,7 @@ namespace PROJE3
             DateTime bitis = dtpBitis.Value.Date.AddDays(1).AddSeconds(-1); 
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {

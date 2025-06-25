@@ -31,7 +31,7 @@ namespace PROJE3
             bool kontrolYapildiMi = false;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
                 string query = "SELECT id FROM kullanicilar WHERE tcno = @tc AND rol = 'doktor'";
@@ -77,7 +77,7 @@ namespace PROJE3
         {
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 try
                 {
@@ -216,7 +216,7 @@ namespace PROJE3
         private void hastalariKontrolEt()
         {
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
                 try
                 {
                     conn.Open();

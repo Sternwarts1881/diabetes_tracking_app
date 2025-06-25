@@ -31,7 +31,7 @@ namespace PROJE3
         {
             string connstr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
 
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connstr))
             {
                 conn.Open();
 
@@ -119,7 +119,7 @@ namespace PROJE3
             int yapildi = 0, yapilmadi = 0;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -166,7 +166,7 @@ namespace PROJE3
             int yapildi = 0, yapilmadi = 0;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
@@ -218,7 +218,7 @@ namespace PROJE3
             seri.XValueType = ChartValueType.DateTime;
 
             string connStr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
                 string sql = "SELECT TarihSaat, Seviye FROM kansekeri WHERE hastaid = @hid ORDER BY TarihSaat ASC";
@@ -304,7 +304,7 @@ namespace PROJE3
             Dictionary<string, int> diyetTakip = new Dictionary<string, int>();
             Dictionary<string, int> egzersizTakip = new Dictionary<string, int>();
 
-            MySqlConnection conn = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 

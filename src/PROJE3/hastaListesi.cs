@@ -27,7 +27,7 @@ namespace PROJE3
             flowLayoutPanel1.Controls.Clear();
 
             string connstr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection con = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection con = new MySqlConnection(connstr))
             {
                 con.Open();
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM kullanicilar k JOIN hastavedoktorlar h on k.id = h.hastaid WHERE h.doktorid = @did", con);
@@ -70,13 +70,13 @@ namespace PROJE3
             if (chkBulanikGorme.Checked) secilenBelirtiler.Add("Bulanık görme");
 
             string connstr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection con = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection con = new MySqlConnection(connstr))
             {
                 con.Open();
                 MySqlCommand cmd = new MySqlCommand("SELECT * FROM kullanicilar k JOIN hastavedoktorlar h on k.id = h.hastaid WHERE h.doktorid = @did", con);
                 cmd.Parameters.AddWithValue("@did", doktorid);
                 MySqlDataReader dr = cmd.ExecuteReader();
-                MySqlConnection con2 = DbConnectionFactory.CreateConnection();
+                using (MySqlConnection con2 = new MySqlConnection(connstr))
                 {
                     con2.Open();
 
@@ -131,7 +131,7 @@ namespace PROJE3
 
             flowLayoutPanel1.Controls.Clear();
             string connstr = "server=localhost;user=root;password=1e2g3e;database=diyabet_sistemi;";
-            MySqlConnection con = DbConnectionFactory.CreateConnection();
+            using (MySqlConnection con = new MySqlConnection(connstr))
             {
                 con.Open();
                 MySqlCommand cmd = new MySqlCommand("SELECT ku.id, ku.ad, ku.soyad, AVG(k.Seviye) AS ortalama_seker FROM kullanicilar ku JOIN hastavedoktorlar h on ku.id = h.hastaid JOIN kansekeri k ON h.hastaid=k.hastaid WHERE h.doktorid = @did GROUP BY ku.id, ku.ad , ku.soyad HAVING AVG(k.Seviye)<@istenenDeger;", con);

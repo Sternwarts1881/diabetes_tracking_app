@@ -34,29 +34,49 @@ This is a Windows Forms application developed in C# for tracking diabetes-relate
 * A sample SQL dump is provided so the database can be quickly restored on any system.
 
 ### As a doctor, you can:
+<img src="https://github.com/user-attachments/assets/2fa6d3a1-3c35-4b98-a4a8-20e4a0ee4748" alt="resim" width="400" />
+
 
 1. Register a patient into the database. You will have to select their symptoms and add their initial blood sugar level into the system.
    After registration, patients will receive their login IDs and passwords via e-mail. The system will automatically recommend a dietary and an exercise plan for the patient.
+<img src="https://github.com/user-attachments/assets/0f89a89a-6113-4914-9cd5-12f73573efbc" alt="resim" width="800" />
+
 
 2. Review all of your registered patients' data, such as how well they follow their dietary and exercise plans, the effects of the treatment on their blood sugar levels, the insulin dosages recommended by the system, and more.
+<img src="https://github.com/user-attachments/assets/30967cd3-972a-4570-a06b-45707da11875" alt="resim" width="400" />
+
 
 3. Filter your patients according to their symptoms and their average blood sugar levels.
+<img src="https://github.com/user-attachments/assets/23a36a8e-6dc7-4572-9908-de88d3b2d6ec" alt="resim" width="400" />
 
 4. Send recommendations via text (similar to a standard message).
+<img src="https://github.com/user-attachments/assets/bd9e01f5-6628-4bb1-9865-e3a6fa921e98" alt="resim" width="800" />
+
 
 5. Review alerts which the system automatically sends in case of extreme anomalies or emergency conditions.
 
 And much more...
 
 ### As a patient, you can:
+<img src="https://github.com/user-attachments/assets/7f6a9333-e11f-4950-b0c9-a911da24883c" alt="resim" width="250" />
+
 
 1. Enter whether you have followed the dietary and exercise plans into the system.
+<img src="https://github.com/user-attachments/assets/f58498db-cae5-4e89-87b8-7b4e1031ec0c" alt="resim" width="400" />
+ 
+   (Patient did not register any blood sugar data in this example)
 
 2. Receive recommended insulin dosages based on the blood sugar levels you register into the system.
+<img src="https://github.com/user-attachments/assets/8b02d958-b57c-4bcb-b164-3a98285f117f" alt="resim" width="800" />
+
 
 3. Review your statistics via simple pie chart graphs.
+<img src="https://github.com/user-attachments/assets/841433cd-d204-4cdd-a7b3-5d313ee3033e" alt="resim" width="700" />
+
 
 4. Read any messages your doctor has sent you.
+<img src="https://github.com/user-attachments/assets/692e8ef6-e09e-4f7d-9acf-2826c2940a2a" alt="resim" width="400" />
+
 
 5. Review your previous insulin dosages.
  
